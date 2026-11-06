@@ -2,8 +2,6 @@
 
 **An Azure data pipeline and Power BI analysis of Iowa DOT crash records, built to find when, where and why serious crashes happen.**
 
-Project for MIS 515: Big Data for Business, Iowa State University (Fall 2024), by DataVerse.
-
 🌐 **[Live dashboard](https://codeind.github.io/Iowa-Vehicle-Crash-Data-Analysis/dashboard/)** · 📄 [Project report (PDF)](docs/Iowa_Crash_Analysis_Report.pdf) · 🎤 [Presentation](docs/Iowa_Crash_Analysis_Presentation.pptx)
 
 ---
@@ -102,7 +100,7 @@ Source: Iowa Department of Transportation, published on the [Iowa Data portal](h
 - The cleaned SQL table holds **1,048,576 rows**, which is exactly the row limit of a Microsoft Excel worksheet. The merged file was likely cut off at that limit at some point, so the Power BI charts may not include every record. The live dashboard uses the complete public crash file instead.
 - The merged dataset has one row per vehicle or person rather than per crash, so its counts (for example 675,505 in the heat map) are higher than the number of crashes.
 - Counts by vehicle make reflect how many of each make are on the road, not only how safe they are.
-- The PySpark notebook and Power BI file lived in the course's Azure and Fabric workspaces and are shown here through screenshots from the report.
+- The PySpark notebook and Power BI file lived in the project's Azure and Fabric workspaces and are shown here through screenshots from the report.
 
 ## Repository structure
 
